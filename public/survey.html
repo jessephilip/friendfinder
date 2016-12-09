@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Friend Survey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Survey Questions</h1>
+        <hr>
+    </header>
+    <div class="container">
+        <h4>About You</h4>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="name" type="text" class="validate">
+                <label for="name">Name (Required)</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="photo" type="text">
+                <label for="photo">Link to Photo (Required)</label>
+            </div>
+        </div>
+        <main id="questionnaire">
+        </main>
+        <a id="friendsList" href="/api/friends">API Friends List | </a>
+        <a id="githubRepo" href="https://github.com/jessephilip/friendfinder" target="_blank"> Github Repo</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="javascript/questions.js"></script>
+    <script src="javascript/surveyCode.js"></script>
+</body>
+
+</html>

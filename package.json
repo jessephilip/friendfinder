@@ -1,0 +1,26 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "FriendFinder App for UT-Bootcamp",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessephilip/friendfinder.git"
+  },
+  "author": "jpm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessephilip/friendfinder/issues"
+  },
+  "homepage": "https://github.com/jessephilip/friendfinder#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mysql": "^2.12.0",
+    "path": "^0.12.7"
+  }
+}
