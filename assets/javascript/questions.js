@@ -89,5 +89,3 @@ var questions = [{
         "1 - Eww. Gross. No. This was horrible. I hate myself now."
     ]
 }];
-
-console.log("Questions", questions);

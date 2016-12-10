@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <title>Friend Survey</title>
@@ -29,13 +28,18 @@
         </div>
         <main id="questionnaire">
         </main>
-        <a id="friendsList" href="/api/friends">API Friends List | </a>
-        <a id="githubRepo" href="https://github.com/jessephilip/friendfinder" target="_blank"> Github Repo</a>
+        <div>
+            <button id="submitButton" class="btn waves-effect waves-light" type="submit" name="action">Submit <i class="fa fa-send"></i></button>
+        </div>
+        <footer>
+            <a id="friendsList" href="/api/friends">API Friends List | </a>
+            <a id="githubRepo" href="https://github.com/jessephilip/friendfinder" target="_blank"> Github Repo</a>
+        </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    <script src="javascript/questions.js"></script>
-    <script src="javascript/surveyCode.js"></script>
+    <script type="text/javascript" src="javascript/questions.js"></script>
+    <script type="text/javascript" src="javascript/surveyCode.js"></script>
 </body>
 
 </html>

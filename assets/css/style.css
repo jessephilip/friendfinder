@@ -1,7 +1,41 @@
-.input-field {
-    width: 33%;
-}
-
 header h1 {
     text-align: center;
+}
+
+#submitButton {
+    width: 100%;
+}
+#surveyButton {
+    width: 100%;
+}
+
+.question {
+    margin: 5% 0;
+}
+
+.inputDiv {
+    margin:0 2.5%
+}
+
+footer {
+    margin: 25px 0;
+    width: 100%;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
+}
+hr:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+.sticky {
+    position: absolute;
+    bottom: 0;
+}
+.container {
+    margin-top: 75px;
 }
