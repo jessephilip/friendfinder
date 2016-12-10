@@ -10,9 +10,8 @@ module.exports = function (app) {
 
     app.post("/api/friends", function (req, res) {
         var total = 0;
-        var savedTotal = 0;
+        var savedTotal;
         var friend;
-        console.log("req.body", req.body);
         // push new friend data to existing array of friends
         friends.push(req.body);
 
@@ -27,14 +26,21 @@ module.exports = function (app) {
                 if (difference < 0) difference = -difference;
                 total += difference;
             }
+            if (i === 0) {
+                savedTotal = total;
+                friend = friends[0];
+            }
+            else if(total < savedTotal) {
+                savedTotal = total;
+                friend = friends[i];
+            }
+            total = 0;  
 
-            if (total >= savedTotal) friend = friends[i];
-            total = 0;
         }
 
         console.log("Winning Friend", friend);
 
-        res.redirect("../public/home.html");
+        res.sendFile(("../public/home.html"));
     });
 
     app.post("/api/clear", function () {
